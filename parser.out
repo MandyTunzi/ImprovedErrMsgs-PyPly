@@ -1,0 +1,266 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> message
+Rule 1     message -> message element
+Rule 2     message -> element
+Rule 3     element -> VARIABLE
+Rule 4     element -> TYPE
+Rule 5     element -> FUNCTION
+Rule 6     element -> OPERATOR
+Rule 7     element -> NUMBER
+Rule 8     element -> STANDARD_INFO
+Rule 9     element -> VALUE
+Rule 10    element -> SUGGESTION
+Rule 11    element -> ERROR_TYPE
+
+Terminals, with rules where they appear
+
+ERROR_TYPE           : 11
+FUNCTION             : 5
+NUMBER               : 7
+OPERATOR             : 6
+STANDARD_INFO        : 8
+SUGGESTION           : 10
+TYPE                 : 4
+VALUE                : 9
+VARIABLE             : 3
+error                : 
+
+Nonterminals, with rules where they appear
+
+element              : 1 2
+message              : 1 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . message
+    (1) message -> . message element
+    (2) message -> . element
+    (3) element -> . VARIABLE
+    (4) element -> . TYPE
+    (5) element -> . FUNCTION
+    (6) element -> . OPERATOR
+    (7) element -> . NUMBER
+    (8) element -> . STANDARD_INFO
+    (9) element -> . VALUE
+    (10) element -> . SUGGESTION
+    (11) element -> . ERROR_TYPE
+
+    VARIABLE        shift and go to state 3
+    TYPE            shift and go to state 4
+    FUNCTION        shift and go to state 5
+    OPERATOR        shift and go to state 6
+    NUMBER          shift and go to state 7
+    STANDARD_INFO   shift and go to state 8
+    VALUE           shift and go to state 9
+    SUGGESTION      shift and go to state 10
+    ERROR_TYPE      shift and go to state 11
+
+    message                        shift and go to state 1
+    element                        shift and go to state 2
+
+state 1
+
+    (0) S' -> message .
+    (1) message -> message . element
+    (3) element -> . VARIABLE
+    (4) element -> . TYPE
+    (5) element -> . FUNCTION
+    (6) element -> . OPERATOR
+    (7) element -> . NUMBER
+    (8) element -> . STANDARD_INFO
+    (9) element -> . VALUE
+    (10) element -> . SUGGESTION
+    (11) element -> . ERROR_TYPE
+
+    VARIABLE        shift and go to state 3
+    TYPE            shift and go to state 4
+    FUNCTION        shift and go to state 5
+    OPERATOR        shift and go to state 6
+    NUMBER          shift and go to state 7
+    STANDARD_INFO   shift and go to state 8
+    VALUE           shift and go to state 9
+    SUGGESTION      shift and go to state 10
+    ERROR_TYPE      shift and go to state 11
+
+    element                        shift and go to state 12
+
+state 2
+
+    (2) message -> element .
+
+    VARIABLE        reduce using rule 2 (message -> element .)
+    TYPE            reduce using rule 2 (message -> element .)
+    FUNCTION        reduce using rule 2 (message -> element .)
+    OPERATOR        reduce using rule 2 (message -> element .)
+    NUMBER          reduce using rule 2 (message -> element .)
+    STANDARD_INFO   reduce using rule 2 (message -> element .)
+    VALUE           reduce using rule 2 (message -> element .)
+    SUGGESTION      reduce using rule 2 (message -> element .)
+    ERROR_TYPE      reduce using rule 2 (message -> element .)
+    $end            reduce using rule 2 (message -> element .)
+
+
+state 3
+
+    (3) element -> VARIABLE .
+
+    VARIABLE        reduce using rule 3 (element -> VARIABLE .)
+    TYPE            reduce using rule 3 (element -> VARIABLE .)
+    FUNCTION        reduce using rule 3 (element -> VARIABLE .)
+    OPERATOR        reduce using rule 3 (element -> VARIABLE .)
+    NUMBER          reduce using rule 3 (element -> VARIABLE .)
+    STANDARD_INFO   reduce using rule 3 (element -> VARIABLE .)
+    VALUE           reduce using rule 3 (element -> VARIABLE .)
+    SUGGESTION      reduce using rule 3 (element -> VARIABLE .)
+    ERROR_TYPE      reduce using rule 3 (element -> VARIABLE .)
+    $end            reduce using rule 3 (element -> VARIABLE .)
+
+
+state 4
+
+    (4) element -> TYPE .
+
+    VARIABLE        reduce using rule 4 (element -> TYPE .)
+    TYPE            reduce using rule 4 (element -> TYPE .)
+    FUNCTION        reduce using rule 4 (element -> TYPE .)
+    OPERATOR        reduce using rule 4 (element -> TYPE .)
+    NUMBER          reduce using rule 4 (element -> TYPE .)
+    STANDARD_INFO   reduce using rule 4 (element -> TYPE .)
+    VALUE           reduce using rule 4 (element -> TYPE .)
+    SUGGESTION      reduce using rule 4 (element -> TYPE .)
+    ERROR_TYPE      reduce using rule 4 (element -> TYPE .)
+    $end            reduce using rule 4 (element -> TYPE .)
+
+
+state 5
+
+    (5) element -> FUNCTION .
+
+    VARIABLE        reduce using rule 5 (element -> FUNCTION .)
+    TYPE            reduce using rule 5 (element -> FUNCTION .)
+    FUNCTION        reduce using rule 5 (element -> FUNCTION .)
+    OPERATOR        reduce using rule 5 (element -> FUNCTION .)
+    NUMBER          reduce using rule 5 (element -> FUNCTION .)
+    STANDARD_INFO   reduce using rule 5 (element -> FUNCTION .)
+    VALUE           reduce using rule 5 (element -> FUNCTION .)
+    SUGGESTION      reduce using rule 5 (element -> FUNCTION .)
+    ERROR_TYPE      reduce using rule 5 (element -> FUNCTION .)
+    $end            reduce using rule 5 (element -> FUNCTION .)
+
+
+state 6
+
+    (6) element -> OPERATOR .
+
+    VARIABLE        reduce using rule 6 (element -> OPERATOR .)
+    TYPE            reduce using rule 6 (element -> OPERATOR .)
+    FUNCTION        reduce using rule 6 (element -> OPERATOR .)
+    OPERATOR        reduce using rule 6 (element -> OPERATOR .)
+    NUMBER          reduce using rule 6 (element -> OPERATOR .)
+    STANDARD_INFO   reduce using rule 6 (element -> OPERATOR .)
+    VALUE           reduce using rule 6 (element -> OPERATOR .)
+    SUGGESTION      reduce using rule 6 (element -> OPERATOR .)
+    ERROR_TYPE      reduce using rule 6 (element -> OPERATOR .)
+    $end            reduce using rule 6 (element -> OPERATOR .)
+
+
+state 7
+
+    (7) element -> NUMBER .
+
+    VARIABLE        reduce using rule 7 (element -> NUMBER .)
+    TYPE            reduce using rule 7 (element -> NUMBER .)
+    FUNCTION        reduce using rule 7 (element -> NUMBER .)
+    OPERATOR        reduce using rule 7 (element -> NUMBER .)
+    NUMBER          reduce using rule 7 (element -> NUMBER .)
+    STANDARD_INFO   reduce using rule 7 (element -> NUMBER .)
+    VALUE           reduce using rule 7 (element -> NUMBER .)
+    SUGGESTION      reduce using rule 7 (element -> NUMBER .)
+    ERROR_TYPE      reduce using rule 7 (element -> NUMBER .)
+    $end            reduce using rule 7 (element -> NUMBER .)
+
+
+state 8
+
+    (8) element -> STANDARD_INFO .
+
+    VARIABLE        reduce using rule 8 (element -> STANDARD_INFO .)
+    TYPE            reduce using rule 8 (element -> STANDARD_INFO .)
+    FUNCTION        reduce using rule 8 (element -> STANDARD_INFO .)
+    OPERATOR        reduce using rule 8 (element -> STANDARD_INFO .)
+    NUMBER          reduce using rule 8 (element -> STANDARD_INFO .)
+    STANDARD_INFO   reduce using rule 8 (element -> STANDARD_INFO .)
+    VALUE           reduce using rule 8 (element -> STANDARD_INFO .)
+    SUGGESTION      reduce using rule 8 (element -> STANDARD_INFO .)
+    ERROR_TYPE      reduce using rule 8 (element -> STANDARD_INFO .)
+    $end            reduce using rule 8 (element -> STANDARD_INFO .)
+
+
+state 9
+
+    (9) element -> VALUE .
+
+    VARIABLE        reduce using rule 9 (element -> VALUE .)
+    TYPE            reduce using rule 9 (element -> VALUE .)
+    FUNCTION        reduce using rule 9 (element -> VALUE .)
+    OPERATOR        reduce using rule 9 (element -> VALUE .)
+    NUMBER          reduce using rule 9 (element -> VALUE .)
+    STANDARD_INFO   reduce using rule 9 (element -> VALUE .)
+    VALUE           reduce using rule 9 (element -> VALUE .)
+    SUGGESTION      reduce using rule 9 (element -> VALUE .)
+    ERROR_TYPE      reduce using rule 9 (element -> VALUE .)
+    $end            reduce using rule 9 (element -> VALUE .)
+
+
+state 10
+
+    (10) element -> SUGGESTION .
+
+    VARIABLE        reduce using rule 10 (element -> SUGGESTION .)
+    TYPE            reduce using rule 10 (element -> SUGGESTION .)
+    FUNCTION        reduce using rule 10 (element -> SUGGESTION .)
+    OPERATOR        reduce using rule 10 (element -> SUGGESTION .)
+    NUMBER          reduce using rule 10 (element -> SUGGESTION .)
+    STANDARD_INFO   reduce using rule 10 (element -> SUGGESTION .)
+    VALUE           reduce using rule 10 (element -> SUGGESTION .)
+    SUGGESTION      reduce using rule 10 (element -> SUGGESTION .)
+    ERROR_TYPE      reduce using rule 10 (element -> SUGGESTION .)
+    $end            reduce using rule 10 (element -> SUGGESTION .)
+
+
+state 11
+
+    (11) element -> ERROR_TYPE .
+
+    VARIABLE        reduce using rule 11 (element -> ERROR_TYPE .)
+    TYPE            reduce using rule 11 (element -> ERROR_TYPE .)
+    FUNCTION        reduce using rule 11 (element -> ERROR_TYPE .)
+    OPERATOR        reduce using rule 11 (element -> ERROR_TYPE .)
+    NUMBER          reduce using rule 11 (element -> ERROR_TYPE .)
+    STANDARD_INFO   reduce using rule 11 (element -> ERROR_TYPE .)
+    VALUE           reduce using rule 11 (element -> ERROR_TYPE .)
+    SUGGESTION      reduce using rule 11 (element -> ERROR_TYPE .)
+    ERROR_TYPE      reduce using rule 11 (element -> ERROR_TYPE .)
+    $end            reduce using rule 11 (element -> ERROR_TYPE .)
+
+
+state 12
+
+    (1) message -> message element .
+
+    VARIABLE        reduce using rule 1 (message -> message element .)
+    TYPE            reduce using rule 1 (message -> message element .)
+    FUNCTION        reduce using rule 1 (message -> message element .)
+    OPERATOR        reduce using rule 1 (message -> message element .)
+    NUMBER          reduce using rule 1 (message -> message element .)
+    STANDARD_INFO   reduce using rule 1 (message -> message element .)
+    VALUE           reduce using rule 1 (message -> message element .)
+    SUGGESTION      reduce using rule 1 (message -> message element .)
+    ERROR_TYPE      reduce using rule 1 (message -> message element .)
+    $end            reduce using rule 1 (message -> message element .)
+

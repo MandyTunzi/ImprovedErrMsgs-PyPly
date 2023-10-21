@@ -1,0 +1,654 @@
+<markingguide>
+    <tries>200</tries>
+    <!-- Question One -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Add_main.py"/>
+        <run>python3 Add_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+[1, 2, 3, 4, 5]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+15
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+[10, -5, 8, 0, -2]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+11
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+[0]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+0
+            </file>
+        </trial>
+    </question>
+    <!-- Question Two -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Calc_main.py"/>
+        <run>python3 Calc_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+[3, 1, 4, 1, 5]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+3
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+[6, 2, 8, 1, 4, 7]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+5.0
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+[10]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+10
+            </file>
+        </trial>
+    </question>
+    <!-- Question Three -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Pang_main.py"/>
+        <run>python3 Pang_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+The quick brown fox jumps over the lazy dog
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+True
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+Hello, world!
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+False
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+AbcdEfghiJklmnopQRSTuvwxYz
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+True
+            </file>
+        </trial>
+    </question>
+    <!-- Question Four -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Countsub_main.py"/>
+        <run>python3 Countsub_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+ababab
+ab
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+Enter a substring:
+3
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+hello world
+world
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+Enter a substring:
+1
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+abcdefg
+xyz
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+Enter a substring:
+0
+            </file>
+        </trial>
+    </question>
+    <!-- Question Five -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Fact_main.py"/>
+        <run>python3 Fact_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+0
+            </file>
+            <file name="testoutput.test">
+Enter a positive integer:
+1
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+1
+            </file>
+            <file name="testoutput.test">
+Enter a positive integer:
+1
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+10
+            </file>
+            <file name="testoutput.test">
+Enter a positive integer:
+3628800
+            </file>
+        </trial>
+    </question>
+    <!-- Question Six -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Fibo_main.py"/>
+        <run>python3 Fibo_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+5
+            </file>
+            <file name="testoutput.test">
+Enter an integer for required number of terms in the sequence:
+[0, 1, 1, 2, 3]
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+0
+            </file>
+            <file name="testoutput.test">
+Enter an integer for required number of terms in the sequence:
+[]
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+1
+            </file>
+            <file name="testoutput.test">
+Enter an integer for required number of terms in the sequence:
+[0]
+            </file>
+        </trial>
+    </question>
+    <!-- Question Seven -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Fzbz_main.py"/>
+        <run>python3 Fzbz_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+5
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+[1, 2, 'Fizz', 4, 'Buzz']
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+15
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+[1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+1
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+[1]
+            </file>
+        </trial>
+    </question>
+    <!-- Question Eight -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Minmax_main.py"/>
+        <run>python3 Minmax_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+[5, 3, 8, 2, 7]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+(2, 8)
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+[-10, 0, 15, -5, 8]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+(-10, 15)
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+[1]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+(1, 1)
+            </file>
+        </trial>
+    </question>
+    <!-- Question Nine -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Missnum_main.py"/>
+        <run>python3 Missnum_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+[1, 2, 3, 5]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+4
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+[1, 2, 3, 4, 5]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+6
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+[1, 2, 3, 4, 5, 6, 8]
+            </file>
+            <file name="testoutput.test">
+Enter a list of integers:
+7
+            </file>
+        </trial>
+    </question>
+    <!-- Question Ten -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Palin_main.py"/>
+        <run>python3 Palin_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+Racecar
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+True
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+Hello
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+False
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+M
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+True
+            </file>
+        </trial>
+    </question>
+    <!-- Question Eleven -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Pastrirow_main.py"/>
+        <run>python3 Pastrirow_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+3
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+[1, 3, 3, 1]
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+5
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+[1, 5, 10, 10, 5, 1]
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+0
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+[1]
+            </file>
+        </trial>
+    </question>
+    <!-- Question Twelve -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Refact_main.py"/>
+        <run>python3 Refact_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+5
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+120
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+0
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+1
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+10
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+3628800
+            </file>
+        </trial>
+    </question>
+    <!-- Question Thirteen -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Revstrng_main.py"/>
+        <run>python3 Revstrng_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+hello
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+olleh
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+M
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+M
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+world is round
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+dnuor si dlrow
+            </file>
+        </trial>
+    </question>
+    <!-- Question Fourteeen -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Sumprime_main.py"/>
+        <run>python3 Sumprime_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+17
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+17
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+30
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+10
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+7
+            </file>
+            <file name="testoutput.test">
+Enter an integer:
+7
+            </file>
+        </trial>
+    </question>
+    <!-- Question Fifteen -->
+    <question>
+        <fixedfile name="lexing_mech.py"/>
+        <fixedfile name="parsing_mech.py"/>
+        <fixedfile name="error_msg.db"/>
+        <fixedfile name="process_traceback.py"/>
+        <fixedfile name="Wordfreq_main.py"/>
+        <run>python3 Wordfreq_main.py &gt; testoutput.out &lt; testinput.in 2&gt;&amp;1</run>
+        <check>
+            <file1>testoutput.test</file1>
+            <file2>testoutput.out</file2>
+        </check>
+        <!-- Trial 1 -->
+        <trial>
+            <file name="testinput.in">
+The quick brown fox jumps over the lazy dog
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+{'the': 2, 'quick': 1, 'brown': 1, 'fox': 1, 'jumps': 1, 'over': 1, 'lazy': 1, 'dog': 1}
+            </file>
+        </trial>
+        <!-- Trial 2 -->
+        <trial>
+            <file name="testinput.in">
+Hello world hello
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+{'hello': 2, 'world': 1}
+            </file>
+        </trial>
+        <!-- Trial 3 -->
+        <trial>
+            <file name="testinput.in">
+m
+            </file>
+            <file name="testoutput.test">
+Enter a string:
+{'m': 1}
+            </file>
+        </trial>
+    </question>
+</markingguide>
